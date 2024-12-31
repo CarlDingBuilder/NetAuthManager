@@ -12,3 +12,7 @@ NetAuthManager is a lightweight and flexible .NET-based authorization management
 - **RBAC Permission Architecture**: Implements role-based access control (RBAC).
 - **Frontend-Backend Separation**: Frontend built with Vue 3.0; backend built with .NET 8.
 This project is ideal for building admin management systems, enterprise-level management tools, or complex authorization management services. Feel free to fork, contribute, or use it as a base for your own projects!
+
+## Statement  
+
+This project is managed simultaneously on both [Github](https://github.com/denisding/NetAuthManager.git) and [Gitee](https://gitee.com/bluedman/NetAuthManager.git)!
