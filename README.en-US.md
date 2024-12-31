@@ -31,10 +31,10 @@ If you encounter any issues with the project or have other questions, feel free 
 If you have feature suggestions or ideas, you are also welcome to submit a Pull Request.  
 
 **Pull Request:**
-> Fork the repository!
-> Create your own branch: `git checkout -b feat/xxxx`
-> Commit your changes: `git commit -am 'feat(function): add xxxxx'`
-> Push your branch: `git push origin feat/xxxx`
+> Fork the repository!\
+> Create your own branch: `git checkout -b feat/xxxx`\
+> Commit your changes: `git commit -am 'feat(function): add xxxxx'`\
+> Push your branch: `git push origin feat/xxxx`\
 > Submit a Pull Request
 
 ## Statement  

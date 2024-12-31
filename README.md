@@ -33,10 +33,10 @@
 
 **Pull Request:**
 
-> Fork 代码!
-> 创建自己的分支: `git checkout -b feat/xxxx`
-> 提交您的修改: `git commit -am 'feat(function): add xxxxx'`
-> 推送您的分支: `git push origin feat/xxxx`
+> Fork 代码!\
+> 创建自己的分支: `git checkout -b feat/xxxx`\
+> 提交您的修改: `git commit -am 'feat(function): add xxxxx'`\
+> 推送您的分支: `git push origin feat/xxxx`\
 > 提交 pull request
 
 ## 声明

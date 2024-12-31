@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8072E3D1-7B13-41C4-AEF7-CFF4D25EFA48}|NetAuthManager\\NetAuthManager.csproj|d:\\projects\\bluedman\\netauthmanager\\backend\\netauthmanager\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8072E3D1-7B13-41C4-AEF7-CFF4D25EFA48}|NetAuthManager\\NetAuthManager.csproj|solutionrelative:netauthmanager\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 176,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\NetAuthManager\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "NetAuthManager\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\NetAuthManager\\Properties\\launchSettings.json",
+              "RelativeToolTip": "NetAuthManager\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-31T12:26:02.713Z",
+              "EditorCaption": ""
             }
           ]
         }

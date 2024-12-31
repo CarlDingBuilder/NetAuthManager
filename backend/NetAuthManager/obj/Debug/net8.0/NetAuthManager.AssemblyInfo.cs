@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetAuthManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e5b92a83d2df71d4590e3eb9880291c8c603b90")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8de985d0f2237cdad0974f4f27826cf9320c7856")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetAuthManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetAuthManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
