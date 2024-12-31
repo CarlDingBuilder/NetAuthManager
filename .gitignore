@@ -23,8 +23,8 @@ dist/                # 前端 Vue 打包结果
 *.class  
 *_flymake.* 
 
-/frontend/node_modules/   # Node.js 模块文件夹  
-/frontend/dist/           # 生产构建的静态文件  
+/frontend/node_modules   # Node.js 模块文件夹  
+/frontend/dist           # 生产构建的静态文件  
 /frontend/.env            # 环境变量配置文件  
 /frontend/.env.local      # 本地开发的环境变量文件  
 /frontend/.DS_Store
@@ -63,4 +63,4 @@ dist/                # 前端 Vue 打包结果
 /backend/packages/          # NuGet 包文件夹 (如果不是全局)  
 *.nupkg                     # NuGet 包文件  
 project.lock.json           # NuGet 恢复的文件 (旧版本用于备份)  
-package-lock.json  
+package-lock.json 
