@@ -1,6 +1,6 @@
 # NetAuthManager  
 
-[英文说明](README.EN.md)
+[English Documentation](README.EN.md)
 
 NetAuthManager 是一个轻量灵活的基于 **.NET 的权限管理系统**，前端采用 Vue.js 驱动。它支持用户管理、角色管理、菜单管理、菜单权限管理以及以基于资源的权限控制功能，同时支持字段级别的权限控制。项目采用 **前后端分离架构**，登录采用 JWT 授权模式，便于理解、扩展和集成到其他系统中。
 
