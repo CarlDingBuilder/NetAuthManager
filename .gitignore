@@ -1,32 +1,32 @@
 # 根目录级别的忽略  
-*.log                # 日志文件 (例如 npm 或系统报错日志)  
-*.temp               # 临时文件  
-!.gitignore          # 保留这个 .gitignore 文件  
-.DS_Store            # macOS 系统文件  
-Thumbs.db            # Windows 系统文件  
-.idea/               # JetBrains IDE 配置信息 (如 WebStorm、Rider 等)  
-.vscode/             # VSCode 特定的配置文件夹 (可选，看是否需要共享)  
-node_modules/        # 前端依赖文件夹 (如果 frontend/ 是 Vue 项目)  
-dist/                # 前端 Vue 打包结果  
+*.log
+*.temp
+!.gitignore
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+dist/
 
 # 输出文件  
-*.swp               # 临时的交换文件 (Linux/Unix 编辑器使用时生成)  
-*.bak  
-*.tmp  
-*.old  
-*.orig  
-*.lock  
-*.pid  
+*.swp
+*.bak
+*.tmp
+*.old
+*.orig
+*.lock
+*.pid
 
 # Windows/Linux 中生成的自动缓存  
-*.pyc  
-*.class  
-*_flymake.* 
+*.pyc
+*.class
+*_flymake.*
 
-/frontend/node_modules   # Node.js 模块文件夹  
-/frontend/dist           # 生产构建的静态文件  
-/frontend/.env            # 环境变量配置文件  
-/frontend/.env.local      # 本地开发的环境变量文件  
+/frontend/node_modules
+/frontend/dist
+/frontend/.env
+/frontend/.env.local
 /frontend/.DS_Store
 /frontend/dist-ssr
 /frontend/*.local
@@ -34,33 +34,32 @@ dist/                # 前端 Vue 打包结果
 /frontend/.idea
 
 # 可选忽略 - VSCode 用户配置  
-/frontend/.vscode/        # VSCode 编辑器的本地配置  
+/frontend/.vscode/
 
 # 日志文件  
-/frontend/npm-debug.log*  
-/frontend/yarn-error.log* 
+/frontend/npm-debug.log*
+/frontend/yarn-error.log*
 
 # Backend 部分 - .NET 项目  
 
-/backend/bin/               # 编译生成的二进制文件夹  
-/backend/obj/               # 编译生成的中间文件夹  
-/backend/.vs/               # Visual Studio 配置信息 (本地使用)  
-*.suo                       # Visual Studio 用户解决方案文件  
-*.user                      # Visual Studio 用户设置文件  
-*.userosscache  
-*.rsuser                    # Visual Studio 当前项目状态  
+/backend/**/bin/
+/backend/**/obj/
+/backend/.vs/
+*.suo
+*.user
+*.userosscache
+*.rsuser
 
 # 发布文件  
-/backend/publish/           # dotnet publish 生成的文件 (部署后不需要)  
-*.dbmdl                     # 数据库模型文件  
-*.log                       # 日志文件  
-*.bak                       # 备份文件  
+/backend/publish/
+*.dbmdl
+*.log
 
 # 环境变量  
-/backend/.env               # 环境变量文件 (注意保密)  
+/backend/.env
 
 # NuGet 和包管理  
-/backend/packages/          # NuGet 包文件夹 (如果不是全局)  
-*.nupkg                     # NuGet 包文件  
-project.lock.json           # NuGet 恢复的文件 (旧版本用于备份)  
-package-lock.json 
+/backend/packages/
+*.nupkg
+project.lock.json
+package-lock.json
