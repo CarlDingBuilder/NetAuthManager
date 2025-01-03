@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<NoWarn>1701;1702;1591</NoWarn>
+		<DocumentationFile>NetAuthManager.Application.xml</DocumentationFile>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<None Remove="applicationsettings.json" />
+		<None Remove="NetAuthManager.Application.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="applicationsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\NetAuthManager.Core\NetAuthManager.Core.csproj" />
+		<ProjectReference Include="..\NetAuthManager.EntityFramework.Core\NetAuthManager.EntityFramework.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Base\Models\" />
+		<Folder Include="Common\Params\" />
+	</ItemGroup>
+
+</Project>

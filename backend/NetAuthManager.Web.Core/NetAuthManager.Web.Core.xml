@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetAuthManager.Web.Core</name>
+    </assembly>
+    <members>
+        <member name="M:NetAuthManager.Web.Core.JwtHandler.HandleAsync(Microsoft.AspNetCore.Authorization.AuthorizationHandlerContext,Microsoft.AspNetCore.Http.DefaultHttpContext)">
+            <summary>
+            重写 Handler 添加自动刷新
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Web.Core.JwtHandler.CheckAuthorzieAsync(Microsoft.AspNetCore.Http.DefaultHttpContext)">
+            <summary>
+            检查权限
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

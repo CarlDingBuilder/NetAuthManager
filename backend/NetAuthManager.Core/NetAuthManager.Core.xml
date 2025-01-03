@@ -1,0 +1,2255 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetAuthManager.Core</name>
+    </assembly>
+    <members>
+        <member name="T:NetAuthManager.Core.Common.Attributes.RequiredValidationAttribute">
+            <summary>
+            必填验证属性
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Attributes.RequiredValidationAttribute.DisplayName">
+            <summary>
+            字段名
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1">
+            <summary>
+            树形节点
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.Id">
+            <summary>
+            树形节点唯一标识
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.Label">
+            <summary>
+            树形节点文本
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.Text">
+            <summary>
+            树形节点文本
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.Name">
+            <summary>
+            树形节点文本
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.Leaf">
+            <summary>
+            是否叶子节点
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.IsLeaf">
+            <summary>
+            是否叶子节点
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.Expanded">
+            <summary>
+            展开
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.Disabled">
+            <summary>
+            是否禁用
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.ExtData">
+            <summary>
+            扩展数据
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Common.Dtos.TreeNodeDto`1.Children">
+            <summary>
+            子节点
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Common.Dtos.TreeNodeDto">
+            <summary>
+            树形节点
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Common.Enums.PermTypeEnum">
+            <summary>
+            对象操作权限
+            并非所有的对象都有这些权限，可能有其中的0个或者多个，也可能所有操作都不在该范围内，这种情况使用字符串的方式调用鉴权方法
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.None">
+            <summary>
+            无权限
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.Execute">
+            <summary>
+            查看（菜单访问权为改权限）
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.ExecuteAll">
+            <summary>
+            查看所有
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.ExecuteHandle">
+            <summary>
+            查看经办
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.New">
+            <summary>
+            新增
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.Edit">
+            <summary>
+            编辑
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.Import">
+            <summary>
+            导入
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.Export">
+            <summary>
+            导出
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.UserResourceAssignPermision">
+            <summary>
+            分配资源，资源管理员
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.PermTypeEnum.Write">
+            <summary>
+            授权管理员
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Common.Enums.SIDTypeEnum">
+            <summary>
+            资源SID类型
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.UserSID">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.RoleSID">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.OUSID">
+            <summary>
+            OU
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.JobLevelSID">
+            <summary>
+            职级
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.OURoleSID">
+            <summary>
+            组织角色
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.LeaderTitleSID">
+            <summary>
+            职位
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.MenuSID">
+            <summary>
+            菜单
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.FileLevelSID">
+            <summary>
+            文件分级
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.RoleGroupSID">
+            <summary>
+            角色组
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.ResourceSID">
+            <summary>
+            资源
+            </summary>
+        </member>
+        <member name="F:NetAuthManager.Core.Common.Enums.SIDTypeEnum.Unknow">
+            <summary>
+            未知
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Exceptions.AggregateExceptionEx.GetMessage(System.AggregateException)">
+            <summary>
+            获取自定义格式消息
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.ModelBuilderEx.UseNumberForBoolean(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            用 NUMBER(1) 代替 Boolean
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.ModelBuilderEx.UseDecimal(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            用 DECIMAL 代替 Decimal, 默认是 NUMBER(18, 2)
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.ToList``1(System.Data.DataTable)">
+            <summary>
+            转换为List
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.ToListHashtable(System.Data.DataTable)">
+            <summary>
+            转换为 List Hashtable
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetString(System.Data.DataRow,System.String,System.String)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetString(System.Data.DataRow,System.String)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetInt32(System.Data.DataRow,System.String,System.Int32)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetObject(System.Data.DataRow,System.String,System.Object)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:NetAuthManager.Core.Common.Extended.SystemEx.FormatToListHashtable(System.Data.IDataReader)" -->
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetInt32(Newtonsoft.Json.Linq.JToken,System.String,System.Int32)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetString(Newtonsoft.Json.Linq.JToken,System.String,System.String)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetBool(Newtonsoft.Json.Linq.JToken,System.String,System.Boolean)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.FormatToHashtable(Newtonsoft.Json.Linq.JObject,System.Collections.Hashtable)">
+            <summary>
+            转换到Hashtable
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetInt32(System.Collections.Hashtable,System.String,System.Int32)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetInt32Null(System.Collections.Hashtable,System.String,System.Nullable{System.Int32})">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetString(System.Collections.Hashtable,System.String,System.String)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetBool(System.Collections.Hashtable,System.String,System.Boolean)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetDecimal(System.Collections.Hashtable,System.String,System.Decimal)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetDateTimeNull(System.Collections.Hashtable,System.String,System.Nullable{System.DateTime})">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.GetDateTime(System.Collections.Hashtable,System.String,System.DateTime)">
+            <summary>
+            获取指定名称的 Key 的值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.FormatTo``1(System.Collections.Hashtable)">
+            <summary>
+            格式化到对象
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="hashtable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.FormatHashtableToPropertyStringList(System.Collections.Hashtable,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            转换到字符串列表
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+            <param name="formatString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.FormatTo``2(``0,System.Boolean)">
+            <summary>
+            类型转换
+            </summary>
+            <typeparam name="TFrom"></typeparam>
+            <typeparam name="TTo"></typeparam>
+            <param name="model"></param>
+            <param name="caseInsensitive">不区分大小写，false：大小敏感，true：大小写不敏感</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.FormatToChild``2(``0)">
+            <summary>
+            格式化到子对象
+            </summary>
+            <typeparam name="TParent"></typeparam>
+            <typeparam name="TChild"></typeparam>
+            <param name="model">父对象</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.FormatToPropertyStringList``1(``0,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            转换到字符串列表
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+            <param name="formatString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.FormatToHashtable``1(``0,System.Collections.Hashtable,System.Collections.Generic.List{System.String})">
+            <summary>
+            转换到Hashtable
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+            <param name="formatString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.FormatToJObject``1(``0,Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            转换到字符串列表
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+            <param name="formatString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Common.Extended.SystemEx.FormatToJToken``1(``0,Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            转换到字符串列表
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model"></param>
+            <param name="formatString"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NetAuthManager.Core.Exceptions.CustomException">
+            <summary>
+            自定义错误
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Exceptions.CustomException.ShouldLogError">
+            <summary>
+            是否需要记录日志，如果需要，被系统拦截到后会记录日志
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Expressions.ExpressionParser`1">
+            <summary>
+            构建查询参数
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:NetAuthManager.Core.Expressions.ExpressionParser`1.ParserConditions(System.Collections.Generic.IEnumerable{NetAuthManager.Core.Models.LinqSelectCondition},System.String)">
+            <summary>
+            转换条件
+            </summary>
+            <param name="conditions">查询条件</param>
+            <param name="name">查询视图昵称</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Expressions.ExpressionParser`1.GetPropertyInfo(System.String)">
+            <summary>
+            获取泛型类的指定名称字段
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Expressions.ExpressionParserEx`1">
+            <summary>
+            权限
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:NetAuthManager.Core.Expressions.ExpressionParserEx`1.ParserConditionsByPerms(System.String[],System.String,System.Collections.Generic.List{NetAuthManager.Core.Models.LinqSelectCondition},System.String,System.String,System.String,System.String)">
+            <summary>
+            转换条件
+            </summary>
+            <param name="permNames">数据权限名</param>
+            <param name="name">查询视图昵称</param>
+            <param name="orConditions">或者</param>
+            <param name="companyColumnName">公司字段</param>
+            <param name="departmentColumnName">部门字段</param>
+            <param name="handleUserColumnName">经办人字段</param>
+            <param name="appUserColumnName">申请人字段</param>
+            <param name="isAdmin">是否管理员</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Expressions.ExpressionParserEx`1.ParseExpressionComp(System.String,System.Linq.Expressions.ParameterExpression)">
+            <summary>
+            公司条件构建
+            </summary>
+            <param name="companyColumnName"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Expressions.ExpressionParserEx`1.ParseExpressionDept(System.String,System.Linq.Expressions.ParameterExpression)">
+            <summary>
+            部门条件构建
+            </summary>
+            <param name="departmentColumnName"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Expressions.ExpressionParserEx`1.ParseExpressionHandleUser(System.String,System.Linq.Expressions.ParameterExpression)">
+            <summary>
+            经办人条件构建
+            </summary>
+            <param name="handleUserColumnName"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Expressions.ExpressionParserEx`1.ParseExpressionAppUser(System.String,System.Linq.Expressions.ParameterExpression)">
+            <summary>
+            经办人条件构建
+            </summary>
+            <param name="appUserColumnName"></param>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:NetAuthManager.Core.Expressions.ExpressionParserEx`1.ConvertFromPermName(System.String,System.String,System.String)" -->
+        <member name="M:NetAuthManager.Core.Expressions.LinqExpressionExtended.OrderBy``1(System.Linq.IQueryable{``0},System.Collections.Generic.List{NetAuthManager.Core.Models.LinqOrderCondition},System.String)">
+            <summary>
+            扩展多条件排序
+            </summary>
+            <typeparam name="TEntry"></typeparam>
+            <param name="queryable"></param>
+            <param name="orderConditions"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Expressions.LinqExpressionExtended.OrderBy``2(System.Linq.IQueryable{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},NetAuthManager.Core.Models.OrderByType)">
+            <summary>
+            按照指定表达式、排序方向进行排序
+            </summary>
+            <typeparam name="TEntry"></typeparam>
+            <typeparam name="Tkey"></typeparam>
+            <param name="queryable"></param>
+            <param name="orderbyKey"></param>
+            <param name="orderType"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Expressions.OrderExpressionItem`1">
+            <summary>
+            排序项
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="T:NetAuthManager.Core.Helper.ConfigHelper">
+            <summary>
+            配置管理
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.ConfigHelper.GetConnectionConfig(System.String)">
+            <summary>
+            读取 appsettings.json 中的 ConnectionConfigs 配置节点
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.EnumToList``1">
+            <summary>
+            将枚举转成List
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.GetEnumberEntity``1(System.Int32)">
+            <summary>
+            根据枚举值来获取单个枚举实体
+            </summary>
+            <typeparam name="T">枚举</typeparam>
+            <param name="value">value</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.GetEnumDescriptionByValue``1(System.Int32)">
+            <summary>
+            根据枚举值value来获取单个枚举实体的文字描述内容
+            </summary>
+            <typeparam name="T">枚举</typeparam>
+            <param name="value">value</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.GetEnumDescriptionByKey``1(System.String)">
+            <summary>
+            根据枚举key来获取单个枚举实体的文字描述内容
+            </summary>
+            <typeparam name="T">枚举</typeparam>
+            <param name="key">value</param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.ToDescription(System.Enum)">
+            <summary>
+            根据枚举类型和枚举值获取枚举描述
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.ToIntValue``1(``0)">
+            <summary>
+            获取值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.ToStringValue``1(``0)">
+            <summary>
+            获取值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.FromStringValue``1(System.String)">
+            <summary>
+            转换为枚举
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.ToDescription``1(System.Object)">
+            <summary>
+            转换为枚举
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.ToDescriptionDictionary``1">
+            <summary>
+            转化枚举及其描述为字典类型
+            </summary>
+            <typeparam name="TEnum"></typeparam>
+            <param name="enumObj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.ToDictionary``1">
+            <summary>
+            转化枚举及其Text值转为字典类型
+            </summary>
+            <typeparam name="TEnum"></typeparam>
+            <param name="enumObj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.GetEnumDic(System.Type)">
+            <summary>
+             返回 Dic&lt;枚举项，描述&gt;
+            </summary>
+            <param name="enumType">枚举的类型</param>
+            <returns>Dic&lt;枚举项，描述&gt;</returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.EnumHelper.GetDescription(System.Type,System.String)">
+            <summary>
+            根据枚举类型和枚举值获取枚举描述
+            </summary>
+            <param name="enumType">枚举类型</param>
+            <param name="enumText">枚举值</param>
+            <returns></returns>
+        </member>
+        <member name="T:NetAuthManager.Core.Helper.EnumEntity">
+            <summary>
+            枚举实体
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Helper.EnumEntity.description">
+            <summary>
+            枚举的描述
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Helper.EnumEntity.title">
+            <summary>
+            枚举名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Helper.EnumEntity.value">
+            <summary>
+            枚举对象的值
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Helper.FuncHelper">
+            <summary>
+            方法帮助
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Helper.FuncHelper.TryDoDelegate">
+            <summary>
+            无返回值的方法委托
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.FuncHelper.TryDoReturn``1(System.Func{``0},System.Boolean)">
+            <summary>
+            尝试做某事并返回结果，出错时返回友好错误
+            </summary>
+            <typeparam name="T">返回值类型</typeparam>
+            <param name="funcDo">做某事</param>
+            <param name="isDebug">是否调试</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.FuncHelper.TryDoReturn``1(System.Func{``0},NetAuthManager.Core.Helper.FuncHelper.TryDoErrorReturnDelegate{``0},System.Boolean)">
+            <summary>
+            尝试做某事并返回结果，出错时做某事
+            </summary>
+            <typeparam name="T">返回值类型</typeparam>
+            <param name="funcDo">做某事</param>
+            <param name="errorDo">错误时执行</param>
+            <param name="isDebug">是否调试</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.FuncHelper.TryDo(NetAuthManager.Core.Helper.FuncHelper.TryDoDelegate,System.Boolean)">
+            <summary>
+            尝试做某事，出错时返回友好错误
+            </summary>
+            <param name="funcDo">做某事</param>
+            <param name="isDebug">是否调试</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.FuncHelper.TryDo(NetAuthManager.Core.Helper.FuncHelper.TryDoDelegate,NetAuthManager.Core.Helper.FuncHelper.TryDoErrorDelegate,System.Boolean)">
+            <summary>
+            尝试做某事，出错时做某事
+            </summary>
+            <param name="funcDo">做某事</param>
+            <param name="errorDo">错误时执行</param>
+            <param name="isDebug">是否调试</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="P:NetAuthManager.Core.Helper.MonitorHelper.LockObject">
+            <summary>
+            锁定对象
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Helper.MonitorHelper.CanWaitTimeout">
+            <summary>
+            是否会超时
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Helper.MonitorHelper.MillisecondsTimeout">
+            <summary>
+            等待秒数
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Helper.MonitorHelper.NoWaitMessage">
+            <summary>
+            不等待返回消息
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.MonitorHelper.#ctor(System.String,System.Boolean,System.Int32,System.String)">
+            <summary>
+            初始化一个锁定
+            </summary>
+            <param name="lockGlobalKey"></param>
+            <param name="canWaitTimeout">是否会超时</param>
+            <param name="secondsTimeout">超时秒数</param>
+            <param name="noWaitMessage">不等待返回消息</param>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.MonitorHelper.TryDoReturn``1(System.Func{``0},System.Boolean)">
+            <summary>
+            尝试做某事并返回结果，出错时返回友好错误
+            </summary>
+            <typeparam name="T">返回值类型</typeparam>
+            <param name="funcDo">做某事</param>
+            <param name="isDebug">是否调试</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.MonitorHelper.TryDoReturn``1(System.Func{``0},NetAuthManager.Core.Helper.FuncHelper.TryDoErrorReturnDelegate{``0},System.Boolean)">
+            <summary>
+            尝试做某事并返回结果，出错时做某事
+            </summary>
+            <typeparam name="T">返回值类型</typeparam>
+            <param name="funcDo">做某事</param>
+            <param name="errorDo">错误时执行</param>
+            <param name="isDebug">是否调试</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.MonitorHelper.TryDo(NetAuthManager.Core.Helper.FuncHelper.TryDoDelegate,System.Boolean)">
+            <summary>
+            尝试做某事，出错时返回友好错误
+            </summary>
+            <param name="funcDo">做某事</param>
+            <param name="isDebug">是否调试</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.MonitorHelper.TryDo(NetAuthManager.Core.Helper.FuncHelper.TryDoDelegate,NetAuthManager.Core.Helper.FuncHelper.TryDoErrorDelegate,System.Boolean)">
+            <summary>
+            尝试做某事，出错时做某事
+            </summary>
+            <param name="funcDo">做某事</param>
+            <param name="errorDo">错误时执行</param>
+            <param name="isDebug">是否调试</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="T:NetAuthManager.Core.Helper.SnowflakeIdGenerator">
+            <summary>
+            雪花ID生成
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.SnowflakeIdGenerator.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.SnowflakeIdGenerator.#ctor(System.Int64,System.Int64)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="datacenterId">数据中心ID，用于标识数据中心的，可以是 1、2、3 等</param>
+            <param name="machineId">机器ID，用于标识机器，可以是 1、2、3 等</param>
+        </member>
+        <member name="M:NetAuthManager.Core.Helper.SnowflakeIdGenerator.NextId">
+            <summary>
+            获取下一个ID
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Models.LinqOrderCondition">
+            <summary>
+            排序对象
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.LinqOrderCondition.Field">
+            <summary>
+            查询字段名称
+            </summary>
+            <example>Name</example>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.LinqOrderCondition.Order">
+            <summary>
+            排序类型
+            </summary>
+            <example>Asc</example>
+        </member>
+        <member name="T:NetAuthManager.Core.Models.LinqSelectCondition">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.LinqSelectCondition.Field">
+            <summary>
+            查询字段名称
+            </summary>
+            <example>Name</example>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.LinqSelectCondition.Value">
+            <summary>
+            值
+            </summary>
+            <example>丁竹</example>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.LinqSelectCondition.Type">
+            <summary>
+            值类型
+            </summary>
+            <example>DateTime</example>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.LinqSelectCondition.Op">
+            <summary>
+            查询操作类型，= / like / in / between
+            </summary>
+            <example>between</example>
+        </member>
+        <member name="T:NetAuthManager.Core.Models.PageList`1">
+            <summary>
+            分页组件实体类
+            </summary>
+            <typeparam name="T">泛型实体</typeparam>
+        </member>
+        <member name="M:NetAuthManager.Core.Models.PageList`1.#ctor(System.Linq.IQueryable{`0},System.Int32,System.Int32)">
+            <summary>
+                构造函数
+            </summary>
+            <param name="source">数据源</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+        </member>
+        <member name="M:NetAuthManager.Core.Models.PageList`1.#ctor(System.Collections.Generic.IList{`0},System.Int32,System.Int32)">
+            <summary>
+                构造函数
+            </summary>
+            <param name="source">数据源</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+        </member>
+        <member name="M:NetAuthManager.Core.Models.PageList`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Int32,System.Int32,System.Int32)">
+            <summary>
+                构造函数
+            </summary>
+            <param name="source">数据源</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <param name="totalCount">总记录数</param>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.PageList`1.PageIndex">
+            <summary>
+                分页索引
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.PageList`1.PageSize">
+            <summary>
+                分页大小
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.PageList`1.TotalCount">
+            <summary>
+                总记录数
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.PageList`1.TotalPages">
+            <summary>
+                总页数
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.PageList`1.HasPreviousPage">
+            <summary>
+                是否有上一页
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Models.PageList`1.HasNextPage">
+            <summary>
+                是否有下一页
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Options.RefreshTokenSettingOptions">
+            <summary>
+            刷新令牌设置
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Options.RefreshTokenSettingOptions.ExpiredTime">
+            <summary>
+            令牌过期时间（分钟）
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Params.BaseSearchParam">
+            <summary>
+            分页查询参数
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Params.BaseSearchParam.filters">
+            <summary>
+            查询参数
+            </summary>
+            <example>
+            [
+                {
+                    "field": "Name",
+                    "value": "丁竹",
+                    "type": "String",
+                    "op": "like"
+                }
+            ]
+            </example>
+        </member>
+        <member name="P:NetAuthManager.Core.Params.BaseSearchParam.sorts">
+            <summary>
+            多列排序
+            </summary>
+            <example>
+            [
+                {
+                    "field": "name",
+                    "order": "asc",
+                }
+            ]
+            </example>
+        </member>
+        <member name="T:NetAuthManager.Core.Params.GetOneParam">
+            <summary>
+            获取一条数据
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Params.GetOneParam.Id">
+            <summary>
+            数据的主键
+            </summary>
+            <example>T001</example>
+        </member>
+        <member name="T:NetAuthManager.Core.Params.GetOneParam`1">
+            <summary>
+            获取一条数据
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Params.GetOneParam`1.Id">
+            <summary>
+            数据的主键
+            </summary>
+            <example>T001</example>
+        </member>
+        <member name="T:NetAuthManager.Core.Params.PageSearchParam">
+            <summary>
+            分页查询参数
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Params.PageSearchParam.pageNo">
+            <summary>
+            当前页
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:NetAuthManager.Core.Params.PageSearchParam.pageSize">
+            <summary>
+            每页数量
+            </summary>
+            <example>15</example>
+        </member>
+        <member name="T:NetAuthManager.Core.Results.PageResult`1">
+            <summary>
+            分页结果
+            </summary>
+            <typeparam name="TDto"></typeparam>
+        </member>
+        <member name="M:NetAuthManager.Core.Results.PageResult`1.Get(System.Collections.Generic.IList{`0},System.Int32,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            分页结果构建
+            </summary>
+            <param name="list">数据列</param>
+            <param name="total"></param>
+            <param name="sumData"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.BaseEntity`1">
+            <summary>
+            实体基类
+            </summary>
+            <typeparam name="TKey">主键类型</typeparam>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.BaseEntity`1.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.BaseGuidEntity">
+            <summary>
+            实体基类
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.BaseGuidEntity.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.BaseGuidEntity.GetNewGuid(System.String)">
+            <summary>
+            获取新的 GUID
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.BaseGuidEntity.Configure``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.BaseGuidEntity.SetGuidKey``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0})">
+            <summary>
+            设置 GUID 主键
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.BaseGuidEntity.SetGuidKey``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)">
+            <summary>
+            设置 GUID 主键
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.BaseGuidEntity.SetGuidColumn``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)">
+            <summary>
+            设置 GUID 列值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.BaseGuidEntity.SetDecimal``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Int32,System.Int32)">
+            <summary>
+            设置 Decimel
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="entityBuilder"></param>
+            <param name="expression"></param>
+            <param name="precision"></param>
+            <param name="scale"></param>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.BaseGuidEntity.SetDefaultTime``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.String)">
+            <summary>
+            设置时间默认值
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.BaseGuidInfoEntity">
+            <summary>
+            实体信息基类
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.BaseGuidInfoEntity.CreatorAccount">
+            <summary>
+            新建人账号
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.BaseGuidInfoEntity.CreatorName">
+            <summary>
+            新建人姓名
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.BaseGuidInfoEntity.CreatedTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.BaseGuidInfoEntity.UpdatorAccount">
+            <summary>
+            更新人账号
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.BaseGuidInfoEntity.UpdatorName">
+            <summary>
+            更新人姓名
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.BaseGuidInfoEntity.UpdatedTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.BaseGuidInfoEntity.Configure``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.BaseGuidInfoEntity.SetDefaultCreatedTime``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0})">
+            <summary>
+            设置新建时间默认值
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysMenu">
+            <summary>
+            菜单表
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.PId">
+            <summary>
+            父ID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.PCode">
+            <summary>
+            用于标识菜单，默认值为：default，如果有多种菜单会使用到这个值
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.Name">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.NameEn">
+            <summary>
+            菜单英文名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.Url">
+            <summary>
+            菜单地址
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.UrlType">
+            <summary>
+            菜单地址类型
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.Icon">
+            <summary>
+            Icon
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.IsMenu">
+            <summary>
+            是否菜单
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.OrderIndex">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.RSID">
+            <summary>
+            RSID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.MenuLevel">
+            <summary>
+            菜单层级
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.ResourceName">
+            <summary>
+            资源名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.IsSpread">
+            <summary>
+            是否展开
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.ConfigJson">
+            <summary>
+            配置JSON
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.Badge">
+            <summary>
+            标记
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.ModuleType">
+            <summary>
+            模块类型
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.NoClosable">
+            <summary>
+            不可关闭
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.NoKeepAlive">
+            <summary>
+            不保存活动
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.Parent">
+            <summary>
+            父菜单
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenu.Children">
+            <summary>
+            子菜单
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysMenu.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysMenu},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysMenuType">
+            <summary>
+            菜单类型表
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenuType.Id">
+            <summary>
+            菜单类型编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysMenuType.PCode">
+            <summary>
+            菜单类型编码
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysMenuType.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysMenuType},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysResourcePerm">
+            <summary>
+            系统菜单权限模块
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePerm.SID">
+            <summary>
+            资源ID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePerm.PermName">
+            <summary>
+            权限名
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePerm.PermDisplayName">
+            <summary>
+            权限名
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePerm.PermType">
+            <summary>
+            权限类型：模块、记录
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePerm.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysResourcePerm.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysResourcePerm},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysResourcePermAcl">
+            <summary>
+            系统菜单权限模块
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePermAcl.SID">
+            <summary>
+            资源ID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePermAcl.AllowPerms">
+            <summary>
+            允许的权限名，多个逗号间隔
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePermAcl.DenyPerms">
+            <summary>
+            禁止的权限名，多个逗号间隔
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePermAcl.RoleType">
+            <summary>
+            授权角色类型：角色、用户、角色组
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePermAcl.RoleParam1">
+            <summary>
+            授权角色参数
+            授权角色编码存储该字段
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePermAcl.RoleParam2">
+            <summary>
+            授权角色参数
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePermAcl.RoleParam3">
+            <summary>
+            授权角色参数
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePermAcl.Inherited">
+            <summary>
+            是否继承
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysResourcePermAcl.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysResourcePermAcl.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysResourcePermAcl},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysRole">
+            <summary>
+            RDM 角色表，区别与组织角色
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.RoleCode">
+            <summary>
+            角色编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.SID">
+            <summary>
+            SID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.IsOpen">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.IsSystem">
+            <summary>
+            是否系统角色
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.IsAdmin">
+            <summary>
+            是否是超级管理员角色
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRole.IsEveryone">
+            <summary>
+            是否是Everyone角色
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysRole.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysRole},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysRoleGroup">
+            <summary>
+            RDM 角色组表
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroup.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroup.GroupCode">
+            <summary>
+            角色组编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroup.GroupName">
+            <summary>
+            角色组名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroup.ServiceEntityCode">
+            <summary>
+            服务实体编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroup.ServiceEntityName">
+            <summary>
+            服务实体名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroup.SID">
+            <summary>
+            SID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroup.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroup.IsOpen">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroup.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysRoleGroup.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysRoleGroup},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysRoleGroupMember">
+            <summary>
+            RDM 角色组成员表
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroupMember.GroupCode">
+            <summary>
+            角色组编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroupMember.SIDType">
+            <summary>
+            角色组成员类型
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroupMember.SID">
+            <summary>
+            角色成员 SID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleGroupMember.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysRoleGroupMember.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysRoleGroupMember},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysRoleMember">
+            <summary>
+            RDM 角色成员表，区别与组织角色成员
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleMember.RoleCode">
+            <summary>
+            角色编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleMember.SIDType">
+            <summary>
+            角色成员类型
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleMember.SID">
+            <summary>
+            角色成员 SID
+            对应用户SID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysRoleMember.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysRoleMember.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysRoleMember},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysSequence">
+            <summary>
+            序列表
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysSequence.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysSequence.Prefix">
+            <summary>
+            前缀
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysSequence.CurValue">
+            <summary>
+            当前值
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysSequence.ActiveDate">
+            <summary>
+            激活日期
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysSequence.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysSequence},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysServiceEntity">
+            <summary>
+            服务实体
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysServiceEntity.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysServiceEntity.EntityCode">
+            <summary>
+            服务实体编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysServiceEntity.EntityName">
+            <summary>
+            服务实体名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysServiceEntity.SourceCode">
+            <summary>
+            来源编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysServiceEntity.Domain">
+            <summary>
+            系统域名前缀
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysServiceEntity.SID">
+            <summary>
+            SID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysServiceEntity.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysServiceEntity.IsOpen">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysServiceEntity.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysServiceEntity.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysServiceEntity},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Entities.SysUser">
+            <summary>
+            用户表
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.Id">
+            <summary>
+            主键Id
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.SID">
+            <summary>
+            SID
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.HRID">
+            <summary>
+            员工工号
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.SourceSystem">
+            <summary>
+            来源系统
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.IsSync">
+            <summary>
+            是否同步
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Entities.SysUser.IsOpen">
+            <summary>
+            是否启用
+            仅当账号和员工都启用时，才是有效的用户
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Entities.SysUser.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{NetAuthManager.Core.Entities.SysUser},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.Repositorys.BaseRepository`1">
+            <summary>
+            默认数据库自定义仓储实现
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="T:NetAuthManager.Core.Repositorys.BaseRepository`2">
+            <summary>
+            自定义仓储实现类
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <typeparam name="TDbContextLocator"></typeparam>
+        </member>
+        <member name="M:NetAuthManager.Core.Repositorys.BaseRepository`2.#ctor(System.IServiceProvider)">
+            <summary>
+            实现基类构造函数
+            </summary>
+            <param name="serviceProvider"></param>
+        </member>
+        <member name="M:NetAuthManager.Core.Repositorys.BaseRepository`2.MyMethod">
+            <summary>
+            自定义方法
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Services.BaseService`1">
+            <summary>
+            基础服务
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetAllPageList(NetAuthManager.Core.Params.PageSearchParam)">
+            <summary>
+            获取分页列表
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetPageList(NetAuthManager.Core.Params.PageSearchParam)">
+            <summary>
+            获取分页列表
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetAllList(NetAuthManager.Core.Params.BaseSearchParam)">
+            <summary>
+            获取所有数据列表
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetTotalCount(NetAuthManager.Core.Params.BaseSearchParam)">
+            <summary>
+            获取所有数据列表
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetByIdAsync(System.String)">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetFirst(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetFirstAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.Any(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.AnyAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetList">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetListAsync">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetList(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.GetListAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.Max``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            最大值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.MaxAsync``1(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Linq.Expressions.Expression{System.Func{`0,``0}})">
+            <summary>
+            最大值
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.InsertAsync(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.Insert(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.InsertOrUpdate(`0)">
+            <summary>
+            保存实体
+            </summary>
+            <param name="entity">当前实体</param>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.InsertOrUpdateAsync(`0)">
+            <summary>
+            保存实体
+            </summary>
+            <param name="entity">当前实体</param>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.InsertOrUpdate(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            保存实体
+            </summary>
+            <param name="entity">当前实体</param>
+            <param name="keyExpression">主键表达式：x => x.Code == entity.Code</param>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.InsertOrUpdateAsync(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            保存实体
+            </summary>
+            <param name="entity">当前实体</param>
+            <param name="keyExpression">主键表达式：x => x.Code == entity.Code</param>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.UpdateAsync(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.Update(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.DeleteByIdAsync(System.String)">
+            <summary>
+            删除实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.DeleteByIdsAsync(System.String[])">
+            <summary>
+            删除多个实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.TryTransDo(System.Func{Microsoft.EntityFrameworkCore.DbContext,System.Boolean})">
+            <summary>
+            执行某操作
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.TryTransDo(NetAuthManager.Core.Services.BaseService{`0}.TryTransDoDelegate)">
+            <summary>
+            执行某操作
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.TryTransDoReturn``1(NetAuthManager.Core.Services.BaseService{`0}.TryTransDoReturnDelegate{``0})">
+            <summary>
+            执行某操作
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.TryTransDoTaskAsync(NetAuthManager.Core.Services.BaseService{`0}.TryTransDoTaskAsyncDelegate)">
+            <summary>
+            执行某操作
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.TryTransDoTaskReturnAsync``1(NetAuthManager.Core.Services.BaseService{`0}.TryTransDoTaskReturnDelegate{``0})">
+            <summary>
+            执行某操作
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Services.BaseService`1.TryTransDoDelegate">
+            <summary>
+            执行某操作的委托类型
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Services.BaseService`1.TryTransDoReturnDelegate`1">
+            <summary>
+            执行某操作的委托类型
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Services.BaseService`1.TryTransDoTaskAsyncDelegate">
+            <summary>
+            执行某操作的委托类型
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Services.BaseService`1.TryTransDoTaskReturnDelegate`1">
+            <summary>
+            执行某操作的委托类型
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.TryAsyncDoDelegate``1(NetAuthManager.Core.Services.BaseService{`0}.TryTransDoTaskDelegate{``0})">
+            <summary>
+            尝试业务执行
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.BaseService`1.TryAsyncDoReturnDelegate``2(NetAuthManager.Core.Services.BaseService{`0}.TryTransDoTaskReturnDelegate{``0,``1})">
+            <summary>
+            尝试业务执行并返回
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Services.EnumService">
+            <summary>
+            枚举服务
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.EnumService.GetDescription``1(``0)">
+            <summary>
+            获取枚举描述值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:NetAuthManager.Core.Services.IBaseService`2">
+            <summary>
+            联行信息服务
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetAllPageList(NetAuthManager.Core.Params.PageSearchParam)">
+            <summary>
+            获取分页列表
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetPageList(NetAuthManager.Core.Params.PageSearchParam)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetAllList(NetAuthManager.Core.Params.BaseSearchParam)">
+            <summary>
+            获取所有数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetTotalCount(NetAuthManager.Core.Params.BaseSearchParam)">
+            <summary>
+            获取所有数据列表
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetByIdAsync(`1)">
+            <summary>
+            获取分页列表
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetFirst(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetFirstAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.Any(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.AnyAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetList">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetListAsync">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetList(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.GetListAsync(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            获取指定主键对应的数据
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.InsertAsync(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.Insert(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.InsertOrUpdate(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.InsertOrUpdateAsync(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.InsertOrUpdate(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.InsertOrUpdateAsync(`0,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.UpdateAsync(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.Update(`0)">
+            <summary>
+            保存实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.DeleteByIdAsync(`1)">
+            <summary>
+            删除实体
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IBaseService`2.DeleteByIdsAsync(`1[])">
+            <summary>
+            删除多个实体
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Services.IdentityService">
+            <summary>
+            增长值帮助器，如：SN
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.Services.IdentityService.GetIdentityNo(System.String,System.Int32,System.String,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            获取增长值，如生成：G90001，sysPrefix = bpm_transfar_，prefix = G9，length = 5
+            </summary>
+            <param name="prefix">增长唯一标识头，业务部分，数据库中需要使用</param>
+            <param name="length">编码不包含头部的长度</param>
+            <param name="sysPrefix">增长唯一标识头，固定部分，数据库中需要使用</param>
+            <param name="containPrefix">生成的编码是否包含增长唯一标识头，业务部分</param>
+            <param name="initial">初始值</param>
+            <param name="increment">增长值</param>
+            <returns>返回不包含头部的编码</returns>
+        </member>
+        <member name="T:NetAuthManager.Core.User.Dtos.TokenInfoDto">
+            <summary>
+            登录信息
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.User.Dtos.TokenInfoDto.Token">
+            <summary>
+            访问 Token
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.User.Dtos.TokenInfoDto.RefreshToken">
+            <summary>
+            刷新 Token
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.User.Dtos.TokenInfoDto.ExpiredTime">
+            <summary>
+            过期时长
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.User.Dtos.TokenInfoDto.RefreshExpiredTime">
+            <summary>
+            刷新Token过期时长
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.User.Dtos.TokenInfoDto.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Token 信息构造
+            </summary>
+            <param name="userAccount"></param>
+            <param name="userDisplayName"></param>
+            <param name="hrid"></param>
+        </member>
+        <member name="T:NetAuthManager.Core.User.LoginUserInfo">
+            <summary>
+            Jwt 用户登录贮存信息模块
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.User.LoginUserInfo.UserAccount">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.User.LoginUserInfo.UserDisplayName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.User.LoginUserInfo.HRID">
+            <summary>
+            HRID
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.User.LoginUserInfo.#ctor">
+            <summary>
+            反构建
+            </summary>
+        </member>
+        <member name="M:NetAuthManager.Core.User.LoginUserInfo.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            反构建
+            </summary>
+            <param name="claims"></param>
+        </member>
+        <member name="M:NetAuthManager.Core.User.LoginUserInfo.GetLoginUser">
+            <summary>
+            当前登录用户
+            </summary>
+        </member>
+        <member name="T:NetAuthManager.Core.Views.Sys.ViewSysDictionary">
+            <summary>
+            数据字典视图
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.TypeCode">
+            <summary>
+            业务编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.TypeName">
+            <summary>
+            业务名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.ItemCode">
+            <summary>
+            字典项编码
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.ItemName">
+            <summary>
+            字典项名称
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.Ext01">
+            <summary>
+            扩展字段01
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.Ext02">
+            <summary>
+            扩展字段02
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.Ext03">
+            <summary>
+            扩展字段03
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.Ext04">
+            <summary>
+            扩展字段04
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.Ext05">
+            <summary>
+            扩展字段05
+            </summary>
+        </member>
+        <member name="P:NetAuthManager.Core.Views.Sys.ViewSysDictionary.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="T:BPM.FSSC.DBCore.Entity.SysDictionaryItem">
+            <summary>
+            数据字典项表
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.TypeId">
+            <summary>
+            类型ID
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.ItemCode">
+            <summary>
+            字典项编码
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.ItemName">
+            <summary>
+            字典项名称
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.Ext01">
+            <summary>
+            扩展字段01
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.Ext02">
+            <summary>
+            扩展字段02
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.Ext03">
+            <summary>
+            扩展字段03
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.Ext04">
+            <summary>
+            扩展字段04
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.Ext05">
+            <summary>
+            扩展字段05
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.IsOpen">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryItem.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="M:BPM.FSSC.DBCore.Entity.SysDictionaryItem.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{BPM.FSSC.DBCore.Entity.SysDictionaryItem},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+        <member name="T:BPM.FSSC.DBCore.Entity.SysDictionaryType">
+            <summary>
+            数据字典类型表
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.TypeCode">
+            <summary>
+            业务编码
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.TypeName">
+            <summary>
+            业务名称
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.ExtName01">
+            <summary>
+            扩展字段名称01
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.ExtName02">
+            <summary>
+            扩展字段名称02
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.ExtName03">
+            <summary>
+            扩展字段名称03
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.ExtName04">
+            <summary>
+            扩展字段名称04
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.ExtName05">
+            <summary>
+            扩展字段名称05
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.OrderIndex">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.IsOpen">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:BPM.FSSC.DBCore.Entity.SysDictionaryType.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="M:BPM.FSSC.DBCore.Entity.SysDictionaryType.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{BPM.FSSC.DBCore.Entity.SysDictionaryType},Microsoft.EntityFrameworkCore.DbContext,System.Type)">
+            <summary>
+            配置数据库实体
+            </summary>
+            <param name="entityBuilder"></param>
+            <param name="dbContext"></param>
+            <param name="dbContextLocator"></param>
+        </member>
+    </members>
+</doc>

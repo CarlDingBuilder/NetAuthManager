@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<NoWarn>1701;1702;1591</NoWarn>
+		<DocumentationFile>NetAuthManager.Web.Core.xml</DocumentationFile>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<None Remove="NetAuthManager.Web.Core.xml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\NetAuthManager.Application\NetAuthManager.Application.csproj" />
+		<ProjectReference Include="..\NetAuthManager.Database.Migrations\NetAuthManager.Database.Migrations.csproj" />
+	</ItemGroup>
+
+</Project>

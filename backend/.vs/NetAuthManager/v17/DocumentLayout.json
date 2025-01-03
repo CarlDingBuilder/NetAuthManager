@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8072E3D1-7B13-41C4-AEF7-CFF4D25EFA48}|NetAuthManager\\NetAuthManager.csproj|d:\\projects\\bluedman\\netauthmanager\\backend\\netauthmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8072E3D1-7B13-41C4-AEF7-CFF4D25EFA48}|NetAuthManager\\NetAuthManager.csproj|solutionrelative:netauthmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BD77E5C-138D-4F2D-B709-F9020F306AF3}|NetAuthManager.EntityFramework.Core\\NetAuthManager.EntityFramework.Core.csproj|d:\\projects\\bluedman\\netauthmanager\\backend\\netauthmanager.entityframework.core\\dbstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD77E5C-138D-4F2D-B709-F9020F306AF3}|NetAuthManager.EntityFramework.Core\\NetAuthManager.EntityFramework.Core.csproj|solutionrelative:netauthmanager.entityframework.core\\dbstartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BD77E5C-138D-4F2D-B709-F9020F306AF3}|NetAuthManager.EntityFramework.Core\\NetAuthManager.EntityFramework.Core.csproj|d:\\projects\\bluedman\\netauthmanager\\backend\\netauthmanager.entityframework.core\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BD77E5C-138D-4F2D-B709-F9020F306AF3}|NetAuthManager.EntityFramework.Core\\NetAuthManager.EntityFramework.Core.csproj|solutionrelative:netauthmanager.entityframework.core\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 176,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\NetAuthManager\\Program.cs",
-              "RelativeDocumentMoniker": "NetAuthManager\\Program.cs",
-              "ToolTip": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\NetAuthManager\\Program.cs",
-              "RelativeToolTip": "NetAuthManager\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\NetAuthManager.EntityFramework.Core\\Startup.cs",
+              "RelativeDocumentMoniker": "NetAuthManager.EntityFramework.Core\\Startup.cs",
+              "ToolTip": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\NetAuthManager.EntityFramework.Core\\Startup.cs",
+              "RelativeToolTip": "NetAuthManager.EntityFramework.Core\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T12:29:07.469Z",
+              "WhenOpened": "2025-01-03T14:54:25.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBStartup.cs",
+              "DocumentMoniker": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\NetAuthManager.EntityFramework.Core\\DBStartup.cs",
+              "RelativeDocumentMoniker": "NetAuthManager.EntityFramework.Core\\DBStartup.cs",
+              "ToolTip": "D:\\Projects\\Bluedman\\NetAuthManager\\backend\\NetAuthManager.EntityFramework.Core\\DBStartup.cs",
+              "RelativeToolTip": "NetAuthManager.EntityFramework.Core\\DBStartup.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwEIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T14:53:08.974Z",
               "EditorCaption": ""
             }
           ]
