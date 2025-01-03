@@ -44,7 +44,7 @@ dist/
 
 /backend/**/bin/
 /backend/**/obj/
-/backend/.vs/
+/backend/.vs
 *.suo
 *.user
 *.userosscache
